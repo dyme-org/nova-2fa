@@ -140,4 +140,14 @@ class Google2fa extends Tool
 
         return view('nova-google2fa::authenticate', $data);
     }
+
+    /**
+     * Build the menu that renders the navigation links for the tool.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     */
+     public function menu(\Illuminate\Http\Request $request) {
+         return [];
+     }
+
 }
